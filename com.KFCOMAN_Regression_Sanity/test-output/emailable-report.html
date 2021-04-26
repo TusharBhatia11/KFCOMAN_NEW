@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">97,398</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">sanityrun.SanityCases</td><td><a href="#m0">Widget</a></td><td rowspan="1">1611305546575</td><td rowspan="1">69673</td></tr></tbody>
+</table>
+<h2>Test</h2><h3 id="m0">sanityrun.SanityCases#Widget</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.InvalidElementStateException: Cannot perform TouchMove action at (540, 192)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-Q6OH7OD&apos;, ip: &apos;192.168.0.105&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appActivity: com.americana.me.ui.onboard..., appPackage: com.kfc.me, databaseEnabled: false, desired: {appActivity: com.americana.me.ui.onboard..., appPackage: com.kfc.me, deviceName: Galaxy A7, newCommandTimeout: 450, platformName: android, platformVersion: 8.0.0, session-override: true}, deviceApiLevel: 26, deviceManufacturer: samsung, deviceModel: SM-A720F, deviceName: 521055efe20b2443, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: 521055efe20b2443, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 450, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 8.0.0, session-override: true, statBarHeight: 63, takesScreenshot: true, viewportRect: {height: 1857, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 8770bc8f-82c9-4f93-a050-a19ec15da994
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.PerformsTouchActions.performTouchAction(PerformsTouchActions.java:41)
+	at io.appium.java_client.TouchAction.perform(TouchAction.java:187)
+	at utils.Utility.swipeToBottom1(Utility.java:177)
+	at sanity.SanityRuncases.widget(SanityRuncases.java:562)
+	at sanityrun.SanityCases.Widget(SanityCases.java:31)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
